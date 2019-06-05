@@ -686,9 +686,36 @@ div#sync2 .item img{ background-size:cover !important; height:100%; width:100%; 
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: #000000;; margin:0;
+  color: #000000; margin:0;
 }
-
+.l-media-object h4{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: 'Sofia Pro Semi'; margin:0px;
+}
+.divider-h{ width:100%; background:#e5e5e5; height:1px; margin:10px 0 30px; }
+.chat-footer.l-open-pro-footer {
+    padding: 0;
+    margin: 30px 0 0;
+    border-top: 1px solid #e5e5e5;
+    padding:25px 0 15px 0;
+}
+.landloard-rt-sec .chat-footer.l-open-pro-footer .col-md-4{ margin-bottom:0px; }
+.l-media-object {
+    align-items: center;
+    margin-bottom: 20px;
+}
+.l-media-object .postion-text{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #787676;
+  font-family: 'Sofia Pro';
+}
 .pro-l-open-property  h5{
   font-size: 18px;
   font-weight: normal;
@@ -1261,14 +1288,14 @@ ul.card-detail li a:hover{ color:#02a1b5 }
   background-color: #128909; display:inline-block; border-radius:50%;
 }
 
-.custom-scrollbar::-webkit-scrollbar {
+.custom-scrollbar::-webkit-scrollbar, .notification-list::-webkit-scrollbar {
   width: 8px;
 }
-.custom-scrollbar::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-track, .notification-list::-webkit-scrollbar-track  {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.custom-scrollbar::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb, .notification-list::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
 }
@@ -1489,6 +1516,10 @@ ul.card-detail li a:hover{ color:#02a1b5 }
     display: flex;
     align-items: center;
 }
+.profile-rt-header ul.notification-list {
+    height: 244px;
+    overflow: auto;
+}
 .profile-rt-header .notification-time{ display:inline-block; width:38%; text-align:right; color:#c4c4c4 !important; }
 .profile-rt-header .notification-list li:hover{ background:#f6fbfc; }
 .notification-footer{ padding:18px 0; }
@@ -1511,6 +1542,58 @@ ul.card-detail li a:hover{ color:#02a1b5 }
   position:absolute; top:-7px; right:15px; content:"";
 }
 .notification-menu.show-notification-menu{ display:block; }
+
+.apartment-pro-bx{ border:1px solid #e5e5e5; border-radius:5px; }
+.apartment-header {
+    background: #02a1b5;
+    padding:15px 10px 10px;
+    border-radius: 5px 5px 0px 0;
+}
+.apartment-header h5{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 0.9;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-family: 'Sofia Pro';
+  margin:0px;
+}
+.apartment-dtl-list{ padding:10px 10px 15px; }
+.property-top-title{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 2.2;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom:20px;
+}
+
+.property-top-title span{
+  font-weight: 900;
+}
+.list-common .pro-dtl-list li{ color:#787676; }
+.list-common .pro-dtl-list li span{ color:#000; }
+.list-common .f-icon {
+    width: 20px;
+    display: inline-block;
+}
+.apartment-pro-bx .light-blue-btn{ width:100%; text-align:center; margin-top:15px; }
+.apartment-header .location-name{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Sofia Pro';
+}
+.apartment-header .property-price  {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-family: 'Sofia Pro Semi';
+}
 @media(max-width:991px){
 	.header .navbar li{ padding:0 10px; }
 	.heading-level-01{ font-size:34px; line-height:44px; margin-bottom:20px; }
