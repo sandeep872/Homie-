@@ -7,7 +7,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/owl.carousel.css" />
-<title>Homie&reg; | Inbox Requests</title>
+<title>Homie&reg; | Inbox Messages</title>
 </head>
 
 <body>
@@ -231,7 +231,8 @@
           <div class="chat-right-section">
             <div class="chat-header">
               <div class="chat-head-left"> <img src="images/l-profile.png" alt="Victoria Brown" class="mr-3  rounded-circle"> John D. </div>
-              <div class="chat-head-right"><a href="#" class="ellipsis"><i class="fa fa-ellipsis-v"></i></a>
+              <div class="chat-head-right">
+              <a href="#" class="ellipsis"><i class="fa fa-ellipsis-v"></i></a>
               	<ul class="chat-menu">
                 	<li><a href="#">View Prifile</a></li>
                     <li><a href="#">Delete Request</a></li>
@@ -239,69 +240,50 @@
               </div>
             </div>
             <div class="chat-body custom-scrollbar">
-              <div class="row pro-l-head">
-                <div class="col-md-3 pr-0"> <img src="images/apartment-big-icon.png" alt=""> </div>
-                <div class="col-md-6">
-                  <h4>An apartment</h4>
-                  <span class="location-address">Paris, France</span>
-                  <ul class="pro-dtl-list">
-                    <li><span class="f-icon"><img src="images/calendar.png" alt=""></span> <span>08/06/2019 - 3-6</span> Months</li>
-                    <li><span class="f-icon"><img src="images/bed-grey-icon-1.png" alt=""></span> <span>1</span> sleeping places</li>
-                    <li><span class="f-icon"><img src="images/bathtub-grey-icon-1.png" alt=""></span> <span>1</span> bathroom</li>
-                  </ul>
-                </div>
-                <div class="col-md-3 text-right">
-                	<div class="budget ">Budget:</div>
-                	<h4>$500-1000</h4>
-                 </div>
-                <div class="col-md-12">
-               		<hr>
+          		<div class="chat-day">
+                <span>Yesterday</span>
                 </div>
                 
-                 
-                
-              </div>
-              <div class="row">
-              	<div class="col-md-12 mt-2 mb-2 pro-feature-sec">
-                	<h5>Features</h5>
-                	<ul class="features-list">
-                    	<li>
-                        	
-                        	<div class="list-block"><div><span class="feature-img"><img src="images/air-conditioner.png" alt=""></span><span>Airconditioning </span></div></div>
-                        </li>
-                        <li>
-                        	<div class="list-block"><div><span class="feature-img"><img src="images/parking.png" alt=""></span><span>Parking/
-Garage</span></div></div>
-                        </li>
-                        <li>
-                        	<div class="list-block"><div><span class="feature-img"><img src="images/smartphone.png" alt=""></span><span>Wi-Fi</span></div></div>
-                        </li>
-                        <li>
-                        	<div class="list-block"><div><span class="feature-img"><img src="images/gym.png" alt=""></span><span>Gym</span></div></div>
-                        </li>
-                        <li>
-                        	<div class="list-block"><div><span class="feature-img"><img src="images/swimming-pool.png" alt=""></span><span>Pool/Hot Tub</span></div></div>
-                        </li>
+                <div class="row mb-3">
+                <div class="col-md-5"></div>
+                	<div class="col-md-6">
+                    	<div class="media-chat-bx rt-chat-tool-tip">
+                        <span class="chat-time">09:01pm</span>
+                        <span class="top-chat-title">You Accepted The Request</span>
+                    <h5 class="chat-account-name">An apartment, $500-1000</h5>
+                    <span class="city-name">Paris, France</span>
+                    <ul class="pro-dtl-list">
+                      <li><span class="f-icon"><img src="images/calendar.png" alt=""></span> <span>08/06/2019 - 3-6</span> Months</li>
+                      <li><span class="f-icon"><img src="images/bed-grey-icon-1.png" alt=""></span> 1 sleeping places</li>
+                      <li><span class="f-icon"><img src="images/bathtub-grey-icon-1.png" alt=""></span> 1 bathroom</li>
                     </ul>
+                    <a href="#" class="view-more-link">View More</a> </div>
+                    </div>
+                    
                 </div>
                 
-                
-                
-                
-              </div>
-              
-              
+                <div class="row mb-3">
+                	<div class="col-md-1">
+                    
+                    </div>
+                    <div class="col-md-6">
+                    	<div class="incoming-chat-bx">
+                        <span class="chat-time">10:01pm</span>
+                        	Hi! 
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="chat-footer">
-            	<div class="row">
-                <div class="col-md-4">
-            	<a href="#" class="primary-btn">Accept ($5)</a>
-                </div>
-                <div class="col-md-5">
-                <a href="#" class="primary-btn disabled-btn">Message John</a>
-                </div>
-                </div>
+            <div class="chat-input-box">
+            	<a class="attach-btn" href="javascript:void(0)"><img src="images/attach-icon.png" alt=""></a>
+                <ul class="attached-menu">
+                	<li><a href="javascript:void(0);">+ Picture</a></li>
+                    <li><a href="javascript:void(0);">+ File</a></li>
+                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#send-property">+ Property</a></li>
+                </ul>
+            	<input type="text" value="" placeholder="Type your message here..." class="form-control">
+                <a class="send-btn" href="#"><img src="images/send-icon.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -363,7 +345,124 @@ Garage</span></div></div>
   </footer>
   <!-- footer end here --> 
 </div>
-<!-- canvas end here --> 
+<!-- canvas end here -->
+
+
+<div class="modal fade mo" id="send-property" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+        	<a href="javascript:void(0);" class="close" data-dismiss="modal"><img src="images/close.png" alt="Close"></a>
+             <h2 class="text-center">Please Choose Some of the Following</h2>
+        <h5 class="text-center">The One You Want To Offer To Tenant</h5>
+        
+        <div class="row">
+        	<div class="col-md-4">
+            	 
+                   
+            	<div class="property-slide-bx">
+                            	<div class="propert-image-box">
+                            		<img src="images/landloard-property-pic-01.png" alt="">
+                                
+                            	</div>
+                                <div class="property-detail-bx">
+                                	<div class="pro-dtl-sec">
+                                    	<h5>An apartment</h5>
+                                        <span class="city-name">Paris, France</span>
+                                    </div>
+                                    <div class="pro-bed-bx">
+                                    	<ul>
+                                        	<li><span class="bed-icon"><img src="images/bed-icon.png" alt=""></span> <span class="pro-count">1</span></li>
+                                            <li><span class="bathtub-icon"><img src="images/bathtub-icon.png" alt=""></span> <span class="pro-count">1</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label class="remember-sec active user-label tenant">
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark check1"></span>
+                </label>
+                        	</div>
+                                         
+            </div>
+            <div class="col-md-4">
+            	<div class="property-slide-bx">
+                            	<div class="propert-image-box">
+                            		<img src="images/landloard-property-pic-01.png" alt="">
+                                
+                            	</div>
+                                <div class="property-detail-bx">
+                                	<div class="pro-dtl-sec">
+                                    	<h5>An apartment</h5>
+                                        <span class="city-name">Paris, France</span>
+                                    </div>
+                                    <div class="pro-bed-bx">
+                                    	<ul>
+                                        	<li><span class="bed-icon"><img src="images/bed-icon.png" alt=""></span> <span class="pro-count">1</span></li>
+                                            <li><span class="bathtub-icon"><img src="images/bathtub-icon.png" alt=""></span> <span class="pro-count">1</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label class="remember-sec user-label landlord">
+  <input type="checkbox" >
+  <span class="checkmark check2"></span>
+</label>
+                        	</div>
+                            
+            </div>
+            <div class="col-md-4">
+            	<div class="property-slide-bx">
+                            	<div class="propert-image-box">
+                            		<img src="images/landloard-property-pic-01.png" alt="">
+                                
+                            	</div>
+                                <div class="property-detail-bx">
+                                	<div class="pro-dtl-sec">
+                                    	<h5>An apartment</h5>
+                                        <span class="city-name">Paris, France</span>
+                                    </div>
+                                    <div class="pro-bed-bx">
+                                    	<ul>
+                                        	<li><span class="bed-icon"><img src="images/bed-icon.png" alt=""></span> <span class="pro-count">1</span></li>
+                                            <li><span class="bathtub-icon"><img src="images/bathtub-icon.png" alt=""></span> <span class="pro-count">1</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label class="remember-sec user-label">
+  <input type="checkbox" >
+  <span class="checkmark check3"></span>
+</label>
+                        	</div>
+            </div>
+            
+            
+          
+                                        
+
+            
+        </div>
+        
+        <div class="row">
+        	<div class="col-md-12">
+            	<div class="up-broken-line-arrow">
+                            	<ul>
+                              		<li><img src="images/up-broken-line-arrow1.png" alt=""></li>
+                                    <li><img src="images/up-broken-line-arrow2.png" alt=""></li>
+                                    <li><img src="images/up-broken-line-arrow3.png" alt=""></li>
+                                </ul>
+                            </div>
+            </div>
+        	<div class="col-md-12 text-center">
+            	<a href="#" class="primary-btn confirm-btn">Confirm</a>
+            </div>
+        </div>
+        </div>
+       
+      </div>
+      
+    </div>
+  </div> 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <script src="js/bootstrap.js"></script> 
