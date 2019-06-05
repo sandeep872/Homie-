@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/owl.carousel.css" />
+<title>Homie&reg; !Profile Landloard Open Properly</title>
+</head>
+
+<body>
+<div class="canvas">
+  <header class="header landloard-profile-head border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 brand"> <a href="index.html"><img src="images/logo.png" alt="Homie&reg;" title="Homie&reg;"></a> </div>
+        <div class="col-sm-6">
+          <nav class="navbar">
+            <div class="navbar-header"> <a href="javascript:void()" class="menu-btn"><img src="images/menu-icon.png" alt=""> <img src="images/close-icon.png" alt=""></a> </div>
+            <div id="bs-navbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">+ New Property</a></li>
+                <li><a href="#">My Properties</a></li>
+                <li><a href="#">Inbox</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-sm-4">
+          <div class="profile-rt-header">
+            <ul class="profile-rt">
+              <li> <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a> </li>
+              <li> <a class="user-email" href="#">landlord@gmail.com</a> <span class="l-profile-img"><img src="images/l-profile.png" alt=""></span> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end here -->
+  
+  <section class="landloard-content main-landloard-profile-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="l-sidebar">
+            <ul class="l-menu">
+              <li class="active"> <a href="edit-profile-landlord.html"><span class="l-p-icon"><img src="images/edit.png" alt=""></span>Edit Profile</a></li>
+              <li><a href="#"><span class="l-p-icon"><img src="images/padlock-grey.png" alt=""></span>Security</a></li>
+              <li><a href="edit-profile-landlord-credit-card.html"><span class="l-p-icon"><img src="images/credit-card.png" alt=""></span>Credit Card Information</a></li>
+              <li><a href="#"><span class="l-p-icon"><img src="images/wallet-grey.png" alt=""></span>Wallet</a></li>
+              <li class="logout-link"><a href="#"><span class="l-p-icon"><img src="images/logout.png" alt=""></span>Log out</a></li>
+            </ul>
+            <div class="l-side-btn-sec"> <a href="#" class="light-blue-btn">+ New Property</a> </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="landloard-rt-sec">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="media pb-4"> <img src="images/landloard-profile.png" class="mr-3 mt-3 rounded-circle" alt="">
+                  <div class="media-body">
+                    <p>Clear frontal face photos are an important way for tenants to learn about each other.  Be sure to use a photo that clearly shows your face and doesn’t include any personal or sensitive info you’d rather not have tenants see.</p>
+                    <div class="landloard-profile-btn-sec"> <a href="#" class="blue-outline-btn arrow-none-btn">Upload from your computer</a> <a href="#" class="light-red-btn">Delete</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <form class="edit-landloard-profile">
+                  <div class="form-group"> <i class="fa fa-user-o input-user-icon"></i>
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="form-group"> <i class="fa fa-user-o input-user-icon"></i>
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                  <div class="form-group"> <i class="fa fa-envelope input-user-icon" aria-hidden="true"></i>
+                    <input type="text" class="form-control" placeholder="Email address">
+                  </div>
+                  <div class="form-group">
+                    <label>Add some information about you</label>
+                    <textarea class="form-control" placeholder="Information..."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>Add a phone number <span>Only tenants can see it to contact you.</span></label>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <select name="country" class="form-control countries" id="countries" required="required">
+                          <option value="" selected="">Country</option>
+                          <!--<option value="1" rel="India">India</option>
+			<option value="2" rel="Usa">Usa</option>-->
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control p-number">
+                        <select name="items" class="form-control cascade pincode" id="pincode" required="required">
+                          <option value="" selected="">Code</option>
+                          <!-- <option value="1" class="India">+91</option>
+    <option value="2" class="Usa">+1</option> -->
+                          
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Verifying code</label>
+                    <input type="text" class="form-control sm-form-control" placeholder="--">
+                    <input type="text" class="form-control sm-form-control" placeholder="--">
+                    <input type="text" class="form-control sm-form-control" placeholder="--">
+                    <input type="text" class="form-control sm-form-control" placeholder="--">
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Save" class="primary-btn">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- landloard-profile end here -->
+  
+  <footer>
+    <section class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="brand-logo"><a href="index.html"><img src="images/logo.png" alt="Homie&reg;" title="Homie&reg;"></a></div>
+            <p>Homie makes finding a place to live quick and easy.</p>
+          </div>
+          <div class="col-md-3">
+            <h5>Tenants</h5>
+            <ul class="f-menu">
+              <li><a href="contact-us.html">How It Works</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Landlords</h5>
+            <ul class="f-menu">
+              <li><a href="contact-us.html">Publish Your Property</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="social-media">
+              <li class="social-media-1"><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+              <li class="social-media-2"><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li class="social-media-3"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="social-media-4"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="copyright-footer">
+        <div class="row">
+          <div class="col-md-5">
+            <p>Copyright © 2019. Homie. All rights reserved</p>
+          </div>
+          <div class="col-md-7">
+            <ul class="term-menu">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Frequently asked Questions</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <!-- footer end here --> 
+</div>
+<!-- canvas end here --> 
+
+<script src="https://code.jquery.com/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/scripts.js"></script>
+</body>
+</html>
