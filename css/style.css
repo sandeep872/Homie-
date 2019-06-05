@@ -1594,6 +1594,60 @@ ul.card-detail li a:hover{ color:#02a1b5 }
   color: #ffffff;
   font-family: 'Sofia Pro Semi';
 }
+
+#send-property h5{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 38px;
+  letter-spacing: normal;
+  color: #333333;
+  font-family: 'Sofia Pro'; color:#
+}
+#send-property a.close {
+    position: absolute;
+    width: 20px;
+    right: 15px;
+    top: 10px;
+}
+#send-property .modal-body {
+    padding: 30px;
+}
+#send-property .user-label{ padding:0px; border:none; }
+
+.property-slide-bx { position:relative; }
+.property-slide-bx .user-label{ position:absolute; left:0; top:0; background:none !important; }
+.property-slide-bx .user-label.active{
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(64, 209, 228, 0.5);
+  border: solid 2px #02a1b5 !important;
+}
+.property-slide-bx .user-label .checkmark {
+    right:auto;
+    top: auto;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -12px;
+}
+#send-property .property-slide-bx{ margin-bottom:70px; }
+.confirm-btn{ min-width:255px; text-align:center; }
+
+#send-property .up-broken-line-arrow {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#send-property .propert-image-box img {
+    border-radius: 5px 5px 0 0;
+}
+div#send-property {
+    background: rgba(255, 255, 255, 0.9);
+}
+#send-property .modal-dialog.modal-lg{
+  border-radius: 5px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; border:none;
+}
+#send-property .modal-content{ border:none; }
 @media(max-width:991px){
 	.header .navbar li{ padding:0 10px; }
 	.heading-level-01{ font-size:34px; line-height:44px; margin-bottom:20px; }
