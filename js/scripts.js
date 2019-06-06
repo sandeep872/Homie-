@@ -220,6 +220,13 @@ jQuery('.attach-btn').click(function() {
 jQuery('.notification-menu-btn').click(function() {
     jQuery('.notification-menu').toggleClass("show-notification-menu");
 });
+
+jQuery(function () {
+  jQuery("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
 });
 
 
