@@ -964,7 +964,7 @@ ul.l-step-2-bed-list li .number-bed-text{
   background-color: #ffffff; margin:0px;
   padding:40px 80px;
 }
-.one-last-thing h2{   font-size: 30px;
+.one-last-thing h2, .h2-title{   font-size: 30px;
   font-weight: normal;
   line-height: 38px; margin-bottom:30px;
   letter-spacing: normal;
@@ -973,7 +973,7 @@ ul.l-step-2-bed-list li .number-bed-text{
 .one-last-thing .primary-btn{ width:100%; }
 .one-last-thing .modal-content{ border:none !important; } 
 div#myModal {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -1089,7 +1089,7 @@ div#myModal {
   padding:13px 50px 16px;
   height:auto !important;
 }
-.edit-landloard-profile textarea.form-control{ padding:15px 20px; height:133px; resize:none; }
+.edit-landloard-profile textarea.form-control{ padding:15px 20px; height:133px !important; resize:none; }
 label{
   font-size: 16px;
   font-weight: normal;
@@ -1317,6 +1317,7 @@ ul.card-detail li a:hover{ color:#02a1b5 }
   font-weight: bold;
   color: #ecaa00;
 }
+
 .chat-wrapper p{
   font-size: 16px;
   font-weight: normal;
@@ -1468,6 +1469,12 @@ ul.card-detail li a:hover{ color:#02a1b5 }
   background:#fff; padding:15px;
   display:inline-block; border-radius:5px;
 }
+.tenant-chat .incoming-chat-bx{ padding:15px 15px 15px 40px; }
+.tenant-chat .incoming-chat-bx:after {
+    background: #02a1b5; position: absolute; width: 3px; height: 75%; left: 20px; top: 18%; content: "";
+}
+.tenant-chat .incoming-chat-bx.sm-v-line:after{ height:56%; top:28%; }
+
 .incoming-chat-bx:before{width: 0;  
   height: 0; content:""; 
   border-top: 10px solid transparent;
@@ -1648,6 +1655,161 @@ div#send-property {
   background-color: #ffffff; border:none;
 }
 #send-property .modal-content{ border:none; }
+
+#view-property { background:rgba(255, 255, 255, 0.85); }
+#view-property .pro-l-open-property {
+    padding: 0;
+    border: none;
+}
+#view-property ul.features-list li{ width:122px; height:124px; }
+#view-property .modal-content.landloard-rt-sec .view-btn-footer{
+  box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.93);
+}
+#view-property .view-btn-footer {
+    text-align: right;
+    padding:15px 44px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#view-property .view-btn-footer .primary-btn{ font-size:20px; }
+#view-property .view-more-content {
+    height:480px;
+    overflow: auto;
+}
+#view-property .modal-content.landloard-rt-sec{ padding-bottom:80px; position:relative; }
+#view-property .modal-content.landloard-rt-sec .close{ position:absolute; width:20px; right:5px; top:5px; }
+
+
+
+.l-left-step-sec-01 .light-text{
+  font-size: 18px;
+  font-weight: 300;
+  line-height:28px;
+  letter-spacing: normal;
+  color: #333333;
+  font-family: 'Sofia Pro';
+  margin-bottom:60px;
+}
+.option-select-bx{ margin-bottom:40px; }
+.arrow-select{ border:1px solid #e5e5e5; padding:15px; background:url(../images/down-arrow.png) 96% center no-repeat; font-size: 16px; font-weight: 300; line-height:normal; color: #787676; background-size:15px; min-width:44%; -webkit-appearance: none;
+    -moz-appearance: none; }
+
+#datepicker{width:145px;}
+#datepicker > span:hover{cursor: pointer;}
+.datepicker-days .datepicker-switch, .datepicker-months .datepicker-switch{
+  font-size: 20px;
+  font-weight: normal;
+  line-height:44px;
+  letter-spacing: normal;
+  color: #787676; font-family: 'Sofia Pro' !important;
+}
+.datepicker-days th.dow{ color:rgba(64, 209, 228, 0.5); font-family: 'Sofia Pro' !important; font-weight:500 !important; }
+.datepicker.dropdown-menu{ padding:20px; border:none; }
+.datepicker.dropdown-menu th, .datepicker.dropdown-menu td{ padding:12px !important; width:44px; height:44px; border-radius:50%; }
+
+.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active{
+  background-color: rgba(64, 209, 228, 0.3); font-size: 16px; font-family: 'Sofia Pro' !important; color: #333333;
+  background-image:none !important; border-radius:50% !important; box-shadow:0px 0px 4px 0px #02a1b5;
+}
+#datepicker .form-control{
+  font-family: 'Sofia Pro';
+  font-size: 16px;
+  font-weight: normal;
+  line-height:normal;
+  letter-spacing: normal;
+  color: #000000; background:#fff !important; height:auto; padding:7px 10px 9px 40px;
+}
+#datepicker .form-control:focus{box-shadow:0 0 10px 0 rgba(64, 209, 228, 0.5) !important;border: solid 1px #02a1b5;}
+
+#datepicker .form-control:disabled, .datepicker .form-control[readonly]{ background-color:#fff !important; }
+#datepicker .input-group-addon {
+    position: absolute;
+    left: 15px;
+    top: 3px; z-index:9; opacity:0.7;
+}
+.datepicker-months {
+    width: 300px;
+}
+.datepicker table{ width:100%; }
+
+
+.datepicker .next, .datepicker .prev{
+    background: url(../images/blue-left-arrow.png) 0 0 no-repeat !important;
+    background-size: 20px !important;
+    font-size: 0;
+    background-position: center !important;
+    display: block;
+}
+
+.datepicker .prev {
+    transform: rotate(0deg);
+}
+.datepicker .next, .datepicker .prev {
+    box-shadow: -2px 10px 15px 0 rgba(64, 209, 228, 0.2);
+    border: solid 1px rgba(64, 209, 228, 0.33) !important;
+    background-color: #ffffff !important;
+    border-radius: 50%;
+    width: 35px;
+    height:35px;
+    cursor: pointer;
+}
+.datepicker .next {
+    transform: rotate(180deg);
+	box-shadow: -2px -10px 15px 0 rgba(64, 209, 228, 0.2);
+}
+body .datepicker.dropdown-menu th.datepicker-switch {
+    padding: 0 0 10px 0 !important; width:220px;
+}
+body .datepicker.dropdown-menu th.datepicker-switch:hover{ background:none !important; color:#01a1b5; }
+.tenant-step-pagination .up-broken-line-arrow {width:70%;}
+.tenant-step-pagination { margin:0px; border-top:none; padding-top:40px; width:100%; }
+
+.tenant-cong .full-btn, .tenant-cong .up-broken-line-arrow {
+    width: 85%; text-align:center;
+}
+i.fa.fa-exclamation {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 24px; color:#02a1b5; margin-right:5px;
+
+}
+.apartment-pro-bx .m-r-accepted-btn{ margin-top:15px; }
+.apartment-pro-bx .m-r-accepted-btn a{ float:none; width:49%;  margin-top:0px; padding-left:0px; padding-right:0px; text-align:center;  }
+.light-blue-btn  span{ color:#ecaa00 !important; }
+.green-color-btn a{ float:none !important; color:#06b858; }
+.rt-t-edit-sec{ margin-top:20px; }
+.rt-t-edit-sec a {
+    display: block;
+    margin-top: 10px;
+}
+.l-a-landloard-header.tenant-a-header {
+    margin: 0;
+}
+.l-a-landloard-header.tenant-a-header strong{ font-weight:500; }
+.main-landloard-profile-sec ul.profile-list span{ color:#02a1b5; }
+
+.landloard-rt-sec .em-status-input{ padding:13px 20px 16px }
+.v-center{ align-items:center; }
+.media.pb-4 {align-items: center;}
+
+.sign-sec.sequrity-sec {
+    padding: 0 20PX;
+}
+.sign-sec.sequrity-sec .signin-form {
+    padding: 0 0 30px;
+    border: initial;
+    width: 320px;
+    margin: 0;
+}
+.sign-sec.sequrity-sec .signin-form  .primary-btn{ margin-top:30px; }
 @media(max-width:991px){
 	.header .navbar li{ padding:0 10px; }
 	.heading-level-01{ font-size:34px; line-height:44px; margin-bottom:20px; }
