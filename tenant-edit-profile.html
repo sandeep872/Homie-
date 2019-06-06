@@ -7,7 +7,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/owl.carousel.css" />
-<title>Homie&reg; ! Profile Landloard Open Properly</title>
+<title>Homie&reg; !Tenant Edit Profile</title>
 </head>
 
 <body>
@@ -79,9 +79,8 @@
           <div class="l-sidebar">
             <ul class="l-menu">
               <li class="active"> <a href="edit-profile-landlord.html"><span class="l-p-icon"><img src="images/edit.png" alt=""></span>Edit Profile</a></li>
+              <li><a href="edit-profile-landlord-credit-card.html"><span class="l-p-icon"><img src="images/gallery.png" alt=""></span>Photo</a></li>
               <li><a href="#"><span class="l-p-icon"><img src="images/padlock-grey.png" alt=""></span>Security</a></li>
-              <li><a href="edit-profile-landlord-credit-card.html"><span class="l-p-icon"><img src="images/credit-card.png" alt=""></span>Credit Card Information</a></li>
-              <li><a href="#"><span class="l-p-icon"><img src="images/wallet-grey.png" alt=""></span>Wallet</a></li>
               <li class="logout-link"><a href="#"><span class="l-p-icon"><img src="images/logout.png" alt=""></span>Log out</a></li>
             </ul>
             <div class="l-side-btn-sec"> <a href="#" class="light-blue-btn">+ New Property</a> </div>
@@ -91,7 +90,7 @@
           <div class="landloard-rt-sec">
             <div class="row">
               <div class="col-md-12">
-                <div class="media pb-4"> <img src="images/landloard-profile.png" class="mr-3 mt-3 rounded-circle" alt="">
+                <div class="media pb-4"> <img src="images/john-profile.png" class="mr-3 mt-3 rounded-circle" alt="" width="183">
                   <div class="media-body">
                     <p>Clear frontal face photos are an important way for tenants to learn about each other.  Be sure to use a photo that clearly shows your face and doesn’t include any personal or sensitive info you’d rather not have tenants see.</p>
                     <div class="landloard-profile-btn-sec"> <a href="#" class="blue-outline-btn arrow-none-btn">Upload from your computer</a> <a href="#" class="light-red-btn">Delete</a> </div>
@@ -116,16 +115,80 @@
                     <textarea class="form-control" placeholder="Information..."></textarea>
                   </div>
                   <div class="form-group">
-                    <label>Add a phone number <span>Only tenants can see it to contact you.</span></label>
+                    <label>Add information about your employment status</label>
                     <div class="row">
                       <div class="col-md-4">
+                        <select class="form-control arrow-select" >
+                          <option value="" selected="">Employment Status</option>
+                    
+                        </select>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control em-status-input" placeholder="Where are You Working/Studying in?">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group ">
+                  	<div class="row v-center">
+                  	
+                    	<div class="col-sm-1"><label>From</label></div>
+                        <div class="col-sm-2">
+                        	<select class="form-control arrow-select">
+                            	<option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-sm-1"><label>To</label></div>
+                        <div class="col-sm-2">
+                        	<select class="form-control arrow-select">
+                            	<option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Add Your Credit Score</label>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <select class="form-control arrow-select" >
+                          <option value="" selected="">300</option>
+                    	  <option value="" selected="">500</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Add a phone number <span>Only tenants can see it to contact you.</span></label>
+                    <div class="row">
+                      <div class="col-md-5">
                         <select name="country" class="form-control countries arrow-select" id="countries" required="required">
                           <option value="" selected="">Country</option>
                           <!--<option value="1" rel="India">India</option>
 			<option value="2" rel="Usa">Usa</option>-->
                         </select>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-5">
                         <input type="text" class="form-control p-number">
                         <select name="items" class="form-control cascade pincode" id="pincode" required="required">
                           <option value="" selected="">Code</option>
