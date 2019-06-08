@@ -194,7 +194,7 @@ p{
 }
 .show-all-link:hover{ color:#02a1b5; opacity:0.5; }
 
-.header{ width:100%; top:0; left:0; padding:16px 0; transition:all 0.5s ease-in-out; z-index:9; position:fixed; background:#fff; }
+.header{ width:100%; top:0; left:0; padding:16px 0; transition:all 0.5s ease-in-out; z-index:99999; position:fixed; background:#fff; }
 .header .row{ align-items:center; }
 .header .navbar-nav{ display:block; }
 .header div#bs-navbar{ width:100%; }
@@ -498,10 +498,10 @@ footer .term-menu li a{ color:#787676; }
   font-weight: normal;
   line-height: normal;
   color: #02a1b5;
-  display:inline-block; padding:0 25px;
+  display:inline-block; padding:0 25px; position:relative;
 }
 .profile-rt-header ul.profile-rt li:last-child{ padding-right:0px; }
-.profile-rt-header ul.profile-rt li+li{ border-left:1px solid #e5e5e5; }
+.profile-rt-header ul.profile-rt li+li:before{ content:""; background:#e5e5e5; width:1px; height:20px; left:-2px; top:10px; position:absolute; }
 .profile-rt-header ul.profile-rt li a{ color:#02a1b5; }
 .profile-rt-header .l-profile-img { margin-left:15px;}
 .profile-rt-header .fa.fa-bell-o {
@@ -514,7 +514,7 @@ footer .term-menu li a{ color:#787676; }
 .landloard-profile-head .navbar li a{ padding:10px 20px; }
 .landloard-profile-head .navbar li a:hover, .landloard-profile-head .navbar li.active a{ background:#e6f6f8; border-radius:5px; color:#02a1b5;}
 .landloard-profile-head .navbar li a:after{ display:none; }
-
+.landloard-profile-head .navbar{ position:relative; right:-100px; }
 .l-sidebar {
     padding: 20px 25px 35px;
     border: 1px solid #e5e5e5;
@@ -1265,7 +1265,7 @@ ul.card-detail li a:hover{ color:#02a1b5 }
   color:#787676;
 }
 .divider-row{ border-bottom:1px solid #e5e5e5; }
-.chat-wrapper ul.features-list li{ margin-right:8px; background:#fff; width:128px; }
+.chat-wrapper ul.features-list li{ margin-right:8px; background:#fff; width:122px; }
 
 .chat-footer {
     padding: 15px 25px;
@@ -1682,8 +1682,6 @@ div#send-property {
 #view-property .modal-content.landloard-rt-sec{ padding-bottom:80px; position:relative; }
 #view-property .modal-content.landloard-rt-sec .close{ position:absolute; width:20px; right:5px; top:5px; }
 
-
-
 .l-left-step-sec-01 .light-text{
   font-size: 18px;
   font-weight: 300;
@@ -1803,16 +1801,61 @@ i.fa.fa-exclamation {
 .sign-sec.sequrity-sec {
     padding: 0 20PX;
 }
-.sign-sec.sequrity-sec .signin-form {
+.sign-sec.sequrity-sec .signin-form { 
     padding: 0 0 30px;
     border: initial;
     width: 320px;
     margin: 0;
 }
 .sign-sec.sequrity-sec .signin-form  .primary-btn{ margin-top:30px; }
+
+.tenant-header .profile-rt-header ul.profile-rt li{ padding:0 20px; }
+.tenant-header .profile-rt-header ul.profile-rt li+li:before{ top:15px; }
+.tenant-header .login {
+    margin-right: 15px; color:#000 !important;
+}
+.tenant-header .navbar li a{ color:#e5e5e5; }
+.tenant-header .profile-rt-header .fa.fa-bell-o{ color:#e5e5e5; }
+.tenant-header .navbar li a:hover, .tenant-header .navbar li.active a{ background:#e5e5e5; color:#fff; }
+@media(max-width:1199px){
+	.landloard-profile-head .navbar li a{ padding:10px; }
+	.landloard-profile-head .navbar{ right:0px; }
+	.header .navbar li{ padding:0px; font-size:13px; }
+	.profile-rt-header .l-profile-img{ margin-left:0px; }
+	.profile-rt-header ul.profile-rt li a{ font-size:13px; }
+	.profile-rt-header ul.profile-rt li{ padding:0 5px; }
+	.l-sidebar{ padding:15px; }
+	.main-landloard-profile-sec .checked-tick-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-size: 9px;
+    margin-top: 0;
+    top: 6px;
+}
+	.l-sidebar .l-menu li{ font-size:13px; }
+	.main-landloard-profile-sec p{ font-size:14px; line-height:24px; }
+	.l-a-landloard-header .col-md-5 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 100%;
+    margin-bottom: 15px;
+}
+.l-a-landloard-header .col-md-3{ flex:0 40%; max-width:40%; }
+.l-sidebar .light-blue-btn{ font-size:13px; }
+.landloard-rt-sec .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.pro-l-head h4{ font-size:22px; }
+ul.features-list li{ margin-right:12px; margin-bottom:15px; }
+.tenant-header .profile-rt-header .primary-btn {
+    padding: 13px 15px 17px !important;
+    min-width:100px;
+}
+	}
 @media(max-width:991px){
-	.header .navbar li{ padding:0 10px; }
-	.heading-level-01{ font-size:34px; line-height:44px; margin-bottom:20px; }
+	.heading-level-01{ font-size:30px; line-height:40px; margin-bottom:20px; }
 	.banner-wrapper .start-btn-sec:before{ width:70%; }
 	.primary-btn{ padding:15px 30px; min-width:120px; }
 	.default-btn{ padding:15px 40px; font-size:20px; }
@@ -1825,17 +1868,50 @@ i.fa.fa-exclamation {
 	footer .social-media li{ margin-right:4px; }
 	.home-sec-5{ padding:50px 0; }
 	.home-sec-7{ padding:60px 0 50px; }
-	footer .footer-top{ padding:40px 0; }
+	footer .footer-top{ padding:20px 0; }
 	footer .term-menu li{ font-size:12px; padding:0 10px; }
 	footer .copyright-footer p{ font-size:12px; }
 	footer .copyright-footer{ padding:15px 0; }
 	.heading-level-02{ font-size:35px; }
 	.heading-level-03{ font-size:20px; }
-	p{ font-size:18px; line-height:28px; }
+	p{ font-size:16px; line-height:24px; }
 	footer ul.f-menu li{ font-size:14px; margin-bottom:5px; }
 	footer .footer-top p{ font-size:14px; }
 	.home-sec-7 p{ font-size:14px; }
-	
+	.show-all-link{ font-size:16px; } 
+	.one-last-thing h2, .h2-title{ font-size:22px; line-height:30px; }
+	.one-last-thing .inbox-request h5{ font-size:16px; }
+	.one-last-thing .inbox-request .blue-outline-btn {
+    font-size: 20px;
+    padding: 11px 10px 15px;
+    width: 42%;
+}
+.primary-btn{ padding:13px 10px 17px !important; }
+.one-last-thing .signin-form{ padding:20px; }
+.one-last-thing .inbox-request .blue-outline-btn{ width:42%; }
+.landloard-rt-sec .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.chat-footer.l-open-pro-footer .primary-btn{ margin-bottom:20px; }
+.chat-footer.l-open-pro-footer .col-md-5{flex:0 0 100%; max-width:100%;} 
+.chat-footer.l-open-pro-footer .disabled-btn{ margin-bottom:0px; }
+ul.features-list li {
+    margin-right: 2%;
+    width:30%;
+}
+.pro-l-open-property p{ font-size:14px; }
+.credit-score-list li{ font-size:16px; margin:5px 0; }
+.signin-form {
+    padding: 20px;
+    width: 100%;
+    margin-bottom:20px;
+}
+
+.sign-sec{ padding:20px 0; }
+.tenant-header .profile-rt-header ul.profile-rt li {
+    padding: 0 8px;
+}
 	}
 @media(max-width:767px){
 body{ padding-top:51px; }
@@ -1855,7 +1931,7 @@ a.arrow-scroll-btn img{ width:30px; }
 .banner-wrapper .lft-bnr-sec{ background:rgba(255, 255, 255, 0.85); padding:20px; }
 .banner-wrapper:before, .banner-wrapper .start-btn-sec:before{ display:none; }
 .home-sec-2 {padding:40px 0 140px 0; text-align:center;}
-.heading-level-02 { font-size:30px; margin-bottom:20px;}
+.heading-level-02 { font-size:26px; margin-bottom:20px;}
 .home-sec-5 .interested-gallery-sec{ padding-left:15px; }
 .home-sec-5 .interested-gallery-sec:before{ display:none; }
 .home-sec-2 .col-sm-4{ margin-top:10px; }
@@ -1873,8 +1949,113 @@ a.arrow-scroll-btn img{ width:30px; }
 .navbar-header a img:last-child, .navbar-header.active-menu a img:first-child{width:0px; transition:all 0.5s ease-in-out; }
 .navbar-header.active-menu a img:last-child{ width:30px; }
 .header .navbar li a{ display:inline-block; }
-.header .navbar li{ text-align:center; font-size:20px; line-height:24px; margin:20px 0; }
+.header .navbar li{ text-align:center; font-size:18px; line-height:22px; margin:20px 0; }
 .header .navbar li a{ color:#fff; }
 .header .navbar li a:after{ background:#fff; }
 .header .brand, .header .col-sm-10 { width:50%;}
+.home-sec-3{ padding-bottom:15px; margin-bottom:15px; }
+.home-sec-3:after {
+    background-position:right bottom;
+    background-size: 50%;
+	height:100%;
+}
+.home-sec-7 .owl-nav{ top:17%; }
+.l-sidebar .l-menu{ min-height:120px; }
+.landloard-profile-head .profile-rt-header {
+    text-align: center;
+    padding: 10px 0;
+}
+.landloard-profile-head .brand, .landloard-profile-head .col-sm-6{ flex:0 0 50%; max-width:50%; }
+.landloard-profile-head .col-sm-6{ text-align:right; }
+.landloard-profile-head .col-sm-4{ flex:0 0 100%; max-width:100%; }
+body {
+    padding-top: 111px;
+}
+.landloard-rt-sec .col-md-4 {
+    margin-bottom: 15px;
+    text-align: center !important;
+}
+.l-a-landloard-header .col-md-3 {
+    flex: 0 50%;
+    max-width: 50%;
+}
+.wallet-sec{justify-content:flex-start;}
+.landloard-rt-sec {
+    padding: 15px 15px 0 15px;
+}
+.main-landloard-profile-sec .l-sidebar{ margin-bottom:25px; }
+.l-a-landloard-header .divRow .col-md-3{ flex:0 0 100%; max-width:100%; text-align:center; }
+.divRow div{ text-align:center; padding:10px; }
+.history-grey-title{ font-size:13px; }
+.divRow{ padding-top:10px; }
+.landloard-profile-btn-sec .arrow-none-btn, .landloard-profile-btn-sec .light-red-btn{padding:9px 20px 12px; width:100%; margin-top:15px;}
+.blue-outline-btn{ font-size:16px; }
+.landloard-rt-sec .media.pb-4{ display:block; }
+.landloard-rt-sec .media.pb-4 img{ margin-bottom:15px; }
+.payment-history-sec .col-md-3, .payment-history-sec .col-md-2{ margin-bottom:15px; }
+.payment-history-sec .col-md-2:last-child{ margin-bottom:0px; }
+.next-steps-list li {
+    width: 32%;
+    padding-right: 3%;
+    background-size: 35%;
+}
+.next-steps-list li a .step-text{ font-size:14px; }
+.step-btn-pagination a {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.landloar-cong-sec .step-btn-pagination{ margin-bottom:20px; }
+.step-rt-img-sec:before{ display:none; }
+.landloar-cong-sec .up-broken-line-arrow{ width:100%; }
+.landloard-rt-sec .col-md-4 .apartment-pro-bx { text-align:left; }
+.landloard-rt-sec{ margin-top:30px; }
+ul.features-list li {
+    margin: 7px 1%;
+    width: 47%;
+}
+.pro-feature-sec{ text-align:center; }
+.property-slide-bx .pro-dtl-sec{ text-align:left; }
+.notification-menu{ width:300px; left:-70px; }
+.notification-menu:before{ right:auto; left:75px; }
+.tenant-cong .full-btn, .tenant-cong .up-broken-line-arrow {
+    width: 100%;
+}
+.heading-level-01{ font-size:24px; line-height:32px; }
+.landloard-step-sec .step-rt-img-sec{ margin:20px 0 0 0; }
+.row.landloar-cong-sec h5 {
+    font-size: 16px;
+}
+.step-btn-pagination{ padding-top:10px; }
+.row.landloar-cong-sec {
+    text-align: center;
+}
+.form-control.p-number{ margin-top:15px; }
+.edit-landloard-profile select#pincode{ top:16px; }
+.edit-landloard-profile .primary-btn{ width:100%; }
+.landloard-step-sec ul.step-list:before{ left:35px; }
+	}
+	
+@media(max-width:575px){
+	.landloard-rt-sec .col-md-4 .apartment-pro-bx, .landloard-rt-sec .col-md-4 .apartment-pro-bx .text-right{ text-align:center !important; }
+	.sign-sec.sequrity-sec .signin-form{ width:100%; margin:0px; }
+	.sign-sec.sequrity-sec .signin-form .primary-btn {margin-top:0;width:100%;}
+	.signin-form .col-sm-6{ margin-bottom:20px; }
+    .signin-form .primary-btn{ width:100%; }
+	.to{ margin-top:15px; }
+	
+	}
+	
+@media(max-width:380px){
+	.l-a-landloard-header .col-md-3{ flex:0 0 100%; max-width:100%;}
+	.wallet-sec{ justify-content:center; margin-bottom:20px; }
+	.mastercard{ font-size:14px; }
+	.next-steps-list li {
+    width: 100%;
+    padding-right: 0;
+    background:none;
+}
+
+ul.features-list li{ width:100%; margin:7px 0; }
+.remember-sec, .forgot-pw{ font-size:13px; }
 	}
