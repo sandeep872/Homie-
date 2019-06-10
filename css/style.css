@@ -1866,6 +1866,43 @@ ul.pro-list.c-p-step-list li {
     height:210px;
     resize: none; font-size:16px; line-height:24px; color:#000;
 }
+
+.upload-sec-gallery .upload-step-pic{ position:absolute; width:40%; }
+.upload-sec-gallery .step-6-gallery { width:100%; }
+.upload-sec-gallery .step-6-gallery img {
+   width:100%;
+    border-radius: 4px;
+    height: 140px;
+    object-fit: cover;
+	float:left; margin:0px
+}
+.upload-sec-gallery .space-div {
+    float:left;
+    width: 43%;
+    height: 300px;
+    float: left;
+}
+.upload-sec-gallery .step-6-gallery span {
+    position: relative;
+    display: inline-block;
+    width: 17%;
+    margin: 0 1.5% 1% 0;
+}
+.remove-image-btn{
+    position: absolute;
+    right:-5px;
+    top:-5px;
+    width:30px;
+    height: 30px; border:1px solid #e5e5e5; border-radius:50%;
+    z-index: 999; display:flex; align-items:center; justify-content:center; background:#fff;
+}
+.remove-image-btn img{ width:14px !important; height:auto !important; }
+.f-btn {
+    font-size: 20px !important;
+    padding: 8px 25px 12px!important;
+    line-height: 31px;
+    margin-right: 15px; width:auto !important; min-width:150px;
+}
 @media(max-width:1199px){
 	.landloard-profile-head .navbar li a{ padding:10px; }
 	.landloard-profile-head .navbar{ right:0px; }
