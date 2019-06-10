@@ -123,7 +123,15 @@ button:focus{ outline:none; }
   margin-bottom:10px;
   font-family: 'Sofia Pro';
 }
-
+.heading-level-05{
+  font-size:18px;
+  font-weight:normal;
+  line-height:normal;
+  letter-spacing: normal;
+  color: #000;
+  margin-bottom:10px;
+  font-family: 'Sofia Pro';
+}
 
 
 p{
@@ -192,7 +200,13 @@ p{
   padding-right:40px; transition:all 0.5s ease-in-out; opacity:1;
   background:url(../images/blue-lft-arrow.png) right center no-repeat; background-size:20px;
 }
+
 .show-all-link:hover{ color:#02a1b5; opacity:0.5; }
+
+.cancel-btn {
+    width: 100%;
+    padding: 9px 20px 11px;
+}
 
 .header{ width:100%; top:0; left:0; padding:16px 0; transition:all 0.5s ease-in-out; z-index:99999; position:fixed; background:#fff; }
 .header .row{ align-items:center; }
@@ -212,7 +226,7 @@ p{
 .banner-wrapper .container{ position:relative; }
 .banner-wrapper .lft-bnr-sec{ background:#fff; padding:40px 40px 40px 15px; display:flex; align-items:center; }
 .banner-wrapper .container, .banner-wrapper .container .row{ height:100%; }
-.banner-wrapper select{
+.hero-select-bx select{
   font-family: 'Sofia Pro';
   font-size: 16px;
   font-weight: 300;
@@ -221,7 +235,7 @@ p{
   letter-spacing: normal;
   color: #787676; padding:15px 20px 15px  60px; 
   background:url(../images/location-pin.png) 30px center no-repeat; background-size:12px 15px;}
-.banner-wrapper .hero-select-bx{ padding:30px 0 0 0;  }
+.hero-select-bx{ padding:30px 0 0 0;  }
 .banner-wrapper .start-btn-sec{ padding:30px 0; position:relative;}
 .banner-wrapper .start-btn-sec:before{background:url(../images/dotted-bg.jpg) 90px 25px repeat-x; content:""; position:absolute; left:90px; top:15px; height:105px; width:90%; z-index:1; }
 .banner-wrapper .bnr-inr-content{ position:relative; z-index:2; }
@@ -235,7 +249,7 @@ p{
 .home-sec-3{  margin-top: -100px; padding-bottom:115px; position:relative; }
 .home-sec-3:after{  background:url(../images/map-vector.png) 0 0 no-repeat; width:370px; height:360px; content:""; position:absolute; right:0; bottom:0; }
 .home-sec-3 p{ margin-bottom:35px; }
-.home-inr-sec-3{ padding:40px 15px; background-size:57% !important; }
+.home-inr-sec-3{ padding:40px 15px; background-size:60% !important; }
 .home-w-sec-3 { padding: 50px 10px 50px 100px;  background: #fff; position:relative;}
 .home-w-sec-3:before{ background:url(../images/yellow-dot.jpg) 0 0 repeat-x; left:0; top:40px; width:18%; content:""; height:105px; position:absolute; z-index:1; }
 .home-w-sec-3 div{ position:relative; z-index:1; }
@@ -478,6 +492,7 @@ footer .term-menu li a{ color:#787676; }
     display: flex;
     align-items: flex-end;
     margin-top: 5px;
+	font-size:16px;
 }
 .user-label .user-icon img:nth-child(2){ display:none; }
 .user-label.active .user-icon img:nth-child(2){ display:inline-block; }
@@ -724,13 +739,13 @@ div#sync2 .item img{ background-size:cover !important; height:100%; width:100%; 
 }
 
 ul.features-list li {
-    width: 131px;
+    width: 130px;
     height: 124px;
     border: 1px solid #e5e5e5;
     text-align: center;
     display: inline-block;
     vertical-align: top;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 ul.features-list li a, ul.features-list li .list-block{
     display: flex;
@@ -879,7 +894,8 @@ ul.l-step-2-bed-list li .number-bed-text{
 .price-select-sec select{
   border: solid 1px #02a1b5;
   background-color: #ffffff;
-  padding:6px 12px;
+  padding:6px 40px 6px 12px;
+  width:100%;
 }
 
 .upload-step-pic{ border:2px dashed rgba(2, 161, 181, 0.5); padding:15px; text-align:center; position:relative; height:300px;     display: flex; align-items: center; border-radius:5px; }
@@ -1271,7 +1287,7 @@ ul.card-detail li a:hover{ color:#02a1b5 }
     padding: 15px 25px;
 }
 .chat-footer .primary-btn{ width:100%; }
-.chat-footer .disabled-btn{ background:#e5e5e5; box-shadow:none; }
+.chat-footer .disabled-btn{ background:#e5e5e5; box-shadow:none; padding:13px 20px 17px !important; }
 .away-icon{
   width: 9px;
   height: 9px;
@@ -1817,6 +1833,39 @@ i.fa.fa-exclamation {
 .tenant-header .navbar li a{ color:#e5e5e5; }
 .tenant-header .profile-rt-header .fa.fa-bell-o{ color:#e5e5e5; }
 .tenant-header .navbar li a:hover, .tenant-header .navbar li.active a{ background:#e5e5e5; color:#fff; }
+.pro-btn-sec .light-blue-btn, .pro-btn-sec .light-red-btn{ font-size:14px; }
+
+.desktop-hide{ display:none !important; }
+.landloard-rt-sec.tenant-edit-request .back-to-req-sec {
+    margin-bottom: 0;
+}
+.tenant-edit-request .hero-select-bx{ padding-top:10px; }
+
+.pro-list .check-property-step {
+    width: 18%;
+    display: inline-block;
+    margin-right: 1.5%;
+    margin-bottom: 1.1%;
+}
+.divider-h.divider-h-2 {
+    margin: 30px 0;
+}
+ul.l-step-2-bed-list.tenant-bed-list li {
+    display: inline-block;
+    width: 48%;
+    margin-right: 1.5%;
+}
+ul.pro-list.c-p-step-list li {
+    width: 28%;
+}
+.lebel-margin-t {
+    margin-top: 60px;
+}
+.form-control.add-description {
+    padding: 20px;
+    height:210px;
+    resize: none; font-size:16px; line-height:24px; color:#000;
+}
 @media(max-width:1199px){
 	.landloard-profile-head .navbar li a{ padding:10px; }
 	.landloard-profile-head .navbar{ right:0px; }
@@ -1832,6 +1881,7 @@ i.fa.fa-exclamation {
     background-size: 9px;
     margin-top: 0;
     top: 6px;
+	
 }
 	.l-sidebar .l-menu li{ font-size:13px; }
 	.main-landloard-profile-sec p{ font-size:14px; line-height:24px; }
@@ -1853,6 +1903,15 @@ ul.features-list li{ margin-right:12px; margin-bottom:15px; }
     padding: 13px 15px 17px !important;
     min-width:100px;
 }
+.pro-list .check-property-step{ width:23%; margin-bottom:0.5%; }
+ul.l-step-2-bed-list.tenant-bed-list li{ margin-right:0px; width:100%; }
+ul.pro-list.c-p-step-list li {
+    width: 31%;
+}
+h5.heading-level-05.mb-3.mt-5 {
+    margin-top: 10px !important; text-align:left;
+}
+.f-width-div{ flex:0 0 100%; max-width:100%; }
 	}
 @media(max-width:991px){
 	.heading-level-01{ font-size:30px; line-height:40px; margin-bottom:20px; }
@@ -1912,9 +1971,11 @@ ul.features-list li {
 .tenant-header .profile-rt-header ul.profile-rt li {
     padding: 0 8px;
 }
+.pro-list .check-property-step{ width:31%; }
+
 	}
 @media(max-width:767px){
-body{ padding-top:51px; }
+body{ padding-top:52px; }
 .home-sec-3, .home-sec-5{ text-align:center; }
 .home-sec-4{ text-align:center; padding:40px 0 30px; }
 footer .footer-top, footer .copyright-footer, footer .term-menu, footer .social-media{ text-align:center; }
@@ -1964,13 +2025,17 @@ a.arrow-scroll-btn img{ width:30px; }
 .landloard-profile-head .profile-rt-header {
     text-align: center;
     padding: 10px 0;
+    position: absolute;
+    right:35px;
+    top: -30px;
+}
+.notification-menu-btn:hover {
+    background: none !important;
 }
 .landloard-profile-head .brand, .landloard-profile-head .col-sm-6{ flex:0 0 50%; max-width:50%; }
 .landloard-profile-head .col-sm-6{ text-align:right; }
 .landloard-profile-head .col-sm-4{ flex:0 0 100%; max-width:100%; }
-body {
-    padding-top: 111px;
-}
+.navbar-header.active-menu .profile-rt-header{ display:none; }
 .landloard-rt-sec .col-md-4 {
     margin-bottom: 15px;
     text-align: center !important;
@@ -2016,8 +2081,11 @@ ul.features-list li {
 }
 .pro-feature-sec{ text-align:center; }
 .property-slide-bx .pro-dtl-sec{ text-align:left; }
-.notification-menu{ width:300px; left:-70px; }
-.notification-menu:before{ right:auto; left:75px; }
+.notification-menu {
+    width: 300px;
+    left: -220px;
+}
+.notification-menu:before{ right:45px; }
 .tenant-cong .full-btn, .tenant-cong .up-broken-line-arrow {
     width: 100%;
 }
@@ -2030,10 +2098,39 @@ ul.features-list li {
 .row.landloar-cong-sec {
     text-align: center;
 }
-.form-control.p-number{ margin-top:15px; }
+.form-control.p-number{ margin-top:0; }
 .edit-landloard-profile select#pincode{ top:16px; }
 .edit-landloard-profile .primary-btn{ width:100%; }
 .landloard-step-sec ul.step-list:before{ left:35px; }
+.primary-btn{ width:100%; }
+.home-inr-sec-3{ padding-bottom:0px; margin:0px; }
+.row.pro-l-head .col-md-3.pr-0 {
+    padding-bottom: 20px;
+}
+.landloard-step-sec {
+    padding: 30px 0;
+}
+.landloard-step-sec ul.step-list {
+    text-align: center;
+    width: 68px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.tenant-header .profile-rt-header ul.profile-rt li+li:before {
+    top:42px;
+}
+.login {
+    margin: 0 0 10px;
+    display: block;
+    font-size: 16px !important;
+}
+.landloard-step-sec .l-left-step-sec-01{ padding:0 15px; text-align:center; }
+.select-outline{ width:100%; }
+.step-header .location-2{ margin:0 auto; }
+.landloard-step-sec ul.step-list li:last-child{ margin-bottom:25px; }
+.mobile-hide{ display:none; }
+.desktop-hide{ display:block !important; }
+.landloard-rt-sec.tenant-edit-request .back-to-req-sec{ margin-bottom:20px; }
 	}
 	
 @media(max-width:575px){
@@ -2043,7 +2140,10 @@ ul.features-list li {
 	.signin-form .col-sm-6{ margin-bottom:20px; }
     .signin-form .primary-btn{ width:100%; }
 	.to{ margin-top:15px; }
-	
+	.pro-list .check-property-step {width: 47%;}
+	ul.pro-list.c-p-step-list li {
+    width: 47%;
+}
 	}
 	
 @media(max-width:380px){
