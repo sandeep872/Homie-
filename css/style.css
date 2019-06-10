@@ -1983,6 +1983,9 @@ h5.heading-level-05.mb-3.mt-5 {
     width: 42%;
 }
 .primary-btn{ padding:13px 10px 17px !important; }
+.f-btn {
+	    padding: 8px 25px 12px!important;
+}
 .one-last-thing .signin-form{ padding:20px; }
 .one-last-thing .inbox-request .blue-outline-btn{ width:42%; }
 .landloard-rt-sec .col-md-4 {
@@ -2009,6 +2012,14 @@ ul.features-list li {
     padding: 0 8px;
 }
 .pro-list .check-property-step{ width:31%; }
+.upload-sec-gallery .upload-step-pic {
+    position: static;
+    width: 100%;  margin-bottom:20px;
+}
+.space-div{ display:none; }
+.upload-sec-gallery .upload-step-pic{ justify-content:center; }
+.upload-sec-gallery .step-6-gallery span{ width:31%; }
+
 
 	}
 @media(max-width:767px){
@@ -2168,6 +2179,7 @@ ul.features-list li {
 .mobile-hide{ display:none; }
 .desktop-hide{ display:block !important; }
 .landloard-rt-sec.tenant-edit-request .back-to-req-sec{ margin-bottom:20px; }
+.landloard-rt-sec.tenant-edit-request .col-md-4{ text-align:left !important; }
 	}
 	
 @media(max-width:575px){
@@ -2181,6 +2193,9 @@ ul.features-list li {
 	ul.pro-list.c-p-step-list li {
     width: 47%;
 }
+.upload-sec-gallery .step-6-gallery span{ width:47%; margin:1%; }
+.f-btn{ width:100% !important; }
+
 	}
 	
 @media(max-width:380px){
