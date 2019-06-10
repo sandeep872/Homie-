@@ -794,7 +794,7 @@ ul.features-list li a span{ display:block; }
 .landloard-step-sec ul.step-list li.active a{ width:100%; background:#01a1b5; }
 .landloard-step-sec ul.step-list li.active:after{position:absolute; width:2px; height:45px; left:46%; margin-left:0px; top:66px; background:#01a1b5; content:"";}
 .landloard-step-sec ul.step-list li:last-child:after{ display:none; }
-.landloard-step-sec ul.step-list li.active-done:after{position:absolute; width:2px; height:100px; left:50%; margin-left:0px; top:60px; background:#01a1b5; content:"";}
+.landloard-step-sec ul.step-list li.active-done:after{position:absolute; width:2px; height:100px; left:46%; margin-left:0px; top:60px; background:#01a1b5; content:"";}
 .landloard-step-sec ul.step-list li.active-done a{ background:#01a1b5; }
 
 .landloard-step-sec .heading-level-01{ font-weight:normal; }
