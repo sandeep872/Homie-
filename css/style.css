@@ -792,7 +792,7 @@ ul.features-list li a span{ display:block; }
 .landloard-step-sec ul.step-list li a{ background:#c4c4c4; width:100%; height:100%; display:flex; align-items:center; justify-content:center;  border-radius:50%; font-family: 'Sofia Pro';font-size:18px;color:#fff; font-weight:normal;}
 .landloard-step-sec ul.step-list li.active{ border:2px solid #01a1b5; background:#fff; position:relative; }
 .landloard-step-sec ul.step-list li.active a{ width:100%; background:#01a1b5; }
-.landloard-step-sec ul.step-list li.active:after{position:absolute; width:2px; height:45px; left:50%; margin-left:0px; top:66px; background:#01a1b5; content:"";}
+.landloard-step-sec ul.step-list li.active:after{position:absolute; width:2px; height:45px; left:46%; margin-left:0px; top:66px; background:#01a1b5; content:"";}
 .landloard-step-sec ul.step-list li:last-child:after{ display:none; }
 .landloard-step-sec ul.step-list li.active-done:after{position:absolute; width:2px; height:100px; left:50%; margin-left:0px; top:60px; background:#01a1b5; content:"";}
 .landloard-step-sec ul.step-list li.active-done a{ background:#01a1b5; }
@@ -899,7 +899,7 @@ ul.l-step-2-bed-list li .number-bed-text{
 }
 
 .upload-step-pic{ border:2px dashed rgba(2, 161, 181, 0.5); padding:15px; text-align:center; position:relative; height:300px;     display: flex; align-items: center; border-radius:5px; }
-.upload-step-pic #gallery-photo-add{ position:absolute; width:100%; height:100%; left:0; top:0; opacity:0; z-index:1; }
+.upload-step-pic #gallery-photo-add, .upload-step-pic #files{ position:absolute; width:100%; height:100%; left:0; top:0; opacity:0; z-index:1; }
 .upload-step-pic .upload-image-icon {
     display: block;
 }
@@ -1878,24 +1878,25 @@ ul.pro-list.c-p-step-list li {
 }
 .upload-sec-gallery .space-div {
     float:left;
-    width: 43%;
+    width: 43% !important;
     height: 300px;
     float: left;
 }
-.upload-sec-gallery .step-6-gallery span {
+.upload-sec-gallery .step-6-gallery span, .upload-sec-gallery .step-6-gallery div {
     position: relative;
     display: inline-block;
     width: 17%;
     margin: 0 1.5% 1% 0;
 }
-.remove-image-btn{
+.remove-image-btn, .remove_pict{
     position: absolute;
     right:-5px;
     top:-5px;
     width:30px;
-    height: 30px; border:1px solid #e5e5e5; border-radius:50%;
+    height: 30px; border:1px solid #e5e5e5; border-radius:50%; color:#e5e5e5;
     z-index: 999; display:flex; align-items:center; justify-content:center; background:#fff;
 }
+.remove_pict a{ color:#e5e5e5; }
 .remove-image-btn img{ width:14px !important; height:auto !important; }
 .f-btn {
     font-size: 20px !important;
@@ -1903,6 +1904,7 @@ ul.pro-list.c-p-step-list li {
     line-height: 31px;
     margin-right: 15px; width:auto !important; min-width:150px;
 }
+.gallery div{ position:relative; }
 @media(max-width:1199px){
 	.landloard-profile-head .navbar li a{ padding:10px; }
 	.landloard-profile-head .navbar{ right:0px; }
@@ -2016,11 +2018,13 @@ ul.features-list li {
     position: static;
     width: 100%;  margin-bottom:20px;
 }
-.space-div{ display:none; }
+.space-div{ display:none !important; }
 .upload-sec-gallery .upload-step-pic{ justify-content:center; }
-.upload-sec-gallery .step-6-gallery span{ width:31%; }
-
-
+.upload-sec-gallery .step-6-gallery span, .upload-sec-gallery .step-6-gallery div{ width:31%; }
+.lebel-margin-t {
+    margin-top: 10px;
+}
+.upload-sec-gallery .step-6-gallery{ text-align:center; }
 	}
 @media(max-width:767px){
 body{ padding-top:52px; }
@@ -2179,7 +2183,7 @@ ul.features-list li {
 .mobile-hide{ display:none; }
 .desktop-hide{ display:block !important; }
 .landloard-rt-sec.tenant-edit-request .back-to-req-sec{ margin-bottom:20px; }
-.landloard-rt-sec.tenant-edit-request .col-md-4{ text-align:left !important; }
+.landloard-rt-sec.tenant-edit-request .col-md-4{ text-align:left !important; } 
 	}
 	
 @media(max-width:575px){
@@ -2195,6 +2199,11 @@ ul.features-list li {
 }
 .upload-sec-gallery .step-6-gallery span{ width:47%; margin:1%; }
 .f-btn{ width:100% !important; }
+
+.upload-sec-gallery .step-6-gallery div {
+    width: 46%;
+    margin: 1.5% 2%;
+}
 
 	}
 	
