@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+<link rel="stylesheet" href="css/datepicker.css">
 <link href="css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/owl.carousel.css" />
-
 <title>Homie&reg; ! Tenant Step 5</title>
 </head>
 
@@ -20,49 +19,60 @@
         <div class="col-sm-2 brand"> <a href="index.html"><img src="images/logo.png" alt="Homie&reg;" title="Homie&reg;"></a> </div>
         <div class="col-sm-6">
           <nav class="navbar">
-            <div class="navbar-header"> <a href="javascript:void()" class="menu-btn"><img src="images/menu-icon.png" alt=""> <img src="images/close-icon.png" alt=""></a> </div>
+            <div class="navbar-header">
+              <div class="profile-rt-header">
+                <ul class="profile-rt">
+                  <li> <a href="#" class="notification-menu-btn"> <i class="fa fa-bell-o" aria-hidden="true"></i> <sup class="away-icon-sm"></sup></a>
+                    <div class="notification-menu">
+                      <div class="row notification-header">
+                        <div class="col-sm-6 text-left"> <a href="#" class="notifications">Notifications</a> </div>
+                        <div class="col-6 text-right"> <a href="#"  class="clear-all">Clear All</a></div>
+                        <div class="col-sm-12">
+                          <hr>
+                        </div>
+                      </div>
+                      <ul class="notification-list">
+                        <li><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> sent a request <strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span> </a></li>
+                        <li><span class="away-icon"></span><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> enquired your property <strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span> </a></li>
+                        <li><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> enquired your property <strong>“An Apartment”</strong></span> <span class="notification-time">2 Days ago</span> </a></li>
+                        <li><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> enquired your property <strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span> </a></li>
+                      </ul>
+                      <div class="notification-footer"> <a href="#" class="more">More</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="javascript:void()" class="menu-btn"><img src="images/menu-icon.png" alt=""> <img src="images/close-icon.png" alt=""></a> </div>
             <div id="bs-navbar">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">+ New Property</a></li>
                 <li><a href="my-requests.html">My Requests</a></li>
                 <li><a href="inbox-requests.html">Inbox</a></li>
+                <li class="desktop-hide"><a href="signin.html">Login</a></li>
+                <li class="desktop-hide"><a class="primary-btn" href="sign-up-step1.html">Sign Up</a></li>
               </ul>
             </div>
           </nav>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 mobile-hide">
           <div class="profile-rt-header">
             <ul class="profile-rt">
               <li> <a href="#" class="notification-menu-btn"> <i class="fa fa-bell-o" aria-hidden="true"></i> <sup class="away-icon-sm"></sup></a>
                 <div class="notification-menu">
-                <div class="row notification-header">
-                  <div class="col-sm-6 text-left"> <a href="#" class="notifications">Notifications</a> </div>
-                  <div class="col-6 text-right"> <a href="#"  class="clear-all">Clear All</a></div>
-                  <div class="col-sm-12">
-                  	<hr>
-                  </div>
-                </div>
-                	<ul class="notification-list">
-                    	<li><a href="#">
-                        	<span class="notification-user-name"><strong>John Doe</strong> sent a request
-<strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span>
-                        </a></li>
-                        <li><span class="away-icon"></span><a href="#">
-                        	<span class="notification-user-name"><strong>John Doe</strong> enquired your property
-<strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span>
-                        </a></li>
-                        <li><a href="#">
-                        	<span class="notification-user-name"><strong>John Doe</strong> enquired your property
-<strong>“An Apartment”</strong></span> <span class="notification-time">2 Days ago</span>
-                        </a></li>
-                        <li><a href="#">
-                        	<span class="notification-user-name"><strong>John Doe</strong> enquired your property
-<strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span>
-                        </a></li>
-                    </ul>
-                    <div class="notification-footer">
-                    	<a href="#" class="more">More</a>
+                  <div class="row notification-header">
+                    <div class="col-sm-6 text-left"> <a href="#" class="notifications">Notifications</a> </div>
+                    <div class="col-6 text-right"> <a href="#"  class="clear-all">Clear All</a></div>
+                    <div class="col-sm-12">
+                      <hr>
                     </div>
+                  </div>
+                  <ul class="notification-list">
+                    <li><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> sent a request <strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span> </a></li>
+                    <li><span class="away-icon"></span><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> enquired your property <strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span> </a></li>
+                    <li><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> enquired your property <strong>“An Apartment”</strong></span> <span class="notification-time">2 Days ago</span> </a></li>
+                    <li><a href="#"> <span class="notification-user-name"><strong>John Doe</strong> enquired your property <strong>“An Apartment”</strong></span> <span class="notification-time">Yesterday</span> </a></li>
+                  </ul>
+                  <div class="notification-footer"> <a href="#" class="more">More</a> </div>
                 </div>
               </li>
               <li> <a class="login" href="signin.html">Login</a> <a class="primary-btn" href="sign-up-step1.html">Sign Up</a></li>
@@ -77,92 +87,91 @@
   <section class="landloard-step-sec">
     <div class="container">
       <div class="row l-step-5">
-        	<div class="col-sm-1">
-        		<ul class="step-list">
-                	<li class="active-done"><a href="tenant-step-1.html">1</a></li>
-                    <li class="active-done"><a href="tenant-step-2.html">2</a></li>
-					<li class="active-done"><a href="tenant-step-3.html">3</a></li>
-                    <li class="active-done"><a href="tenant-step-4.html">4</a></li>
-					<li class="active"><a href="tenant-step-5.html">5</a></li>
-					<li><a href="tenant-step-6.html">6</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-11">
-            	<div class="row">
-                
-                	<div class="col-sm-8 l-left-step-sec-01">
-                    	<div class="step-header">
-                        	<span class="location-2"><img src="images/calendar.png" alt=""></span>
-                            <span class="step-name">Step 5</span>
-                           
-                        </div>
-                         <h2 class="heading-level-01">When Are You Looking To Move?</h2>
-                           <p class="p-step">Choose the dutarion of stay</p> 
-                         <div class="row">
-                         		<div class="col-sm-3 check-property-step">
-                                <label class="remember-sec user-label landlord active">
-                                        <div class="inner-user-bx">
-  <input type="checkbox" checked>
-  <span class="checkmark"></span>
-  <span class="user-icon"><img src="images/calendar-star.png" alt=""> <img src="images/calendar-star-active.png" alt=""></span>
-  <div class="text-label">1-3 Months</div>
-  </div>
-</label>
-                                </div>
-                                
-                                <div class="col-sm-3 check-property-step">
-                                <label class="remember-sec user-label landlord">
-                                        <div class="inner-user-bx">
-  <input type="checkbox">
-  <span class="checkmark"></span>
-  <span class="user-icon"><img src="images/calendar-star.png" alt=""> <img src="images/calendar-star-active.png" alt=""></span>
-  <div class="text-label">3-6 Months</div>
-  </div>
-</label>
-                                </div>
-                                
-                                <div class="col-sm-3 check-property-step">
-                                <label class="remember-sec user-label landlord">
-                                        <div class="inner-user-bx">
-  <input type="checkbox">
-  <span class="checkmark"></span>
-  <span class="user-icon"><img src="images/calendar-star.png" alt=""> <img src="images/calendar-star-active.png" alt=""></span>
-  <div class="text-label">6+ Months</div>
-  </div>
-</label>
-                                </div>
-                                
-                                
-                         </div> 
-                         
-                         <div class="row"> 
-                         	<div class="col-sm-12">
-                            	<p class="p-step">What is the monthly rent?</p>
-                                <label>Select Date: </label>
-<div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-    <input class="form-control" type="text" readonly />
-    <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-</div>
-                            </div>
-                         </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                    	<div class="step-rt-img-sec">
-                    	<img src="images/tenant-image-step-5.jpg" alt="">
-                        </div>
-                    </div>
+        <div class="col-sm-1">
+          <ul class="step-list">
+            <li class="active-done"><a href="tenant-step-1.html">1</a></li>
+            <li class="active-done"><a href="tenant-step-2.html">2</a></li>
+            <li class="active-done"><a href="tenant-step-3.html">3</a></li>
+            <li class="active-done"><a href="tenant-step-4.html">4</a></li>
+            <li class="active"><a href="tenant-step-5.html">5</a></li>
+            <li><a href="tenant-step-6.html">6</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-11">
+          <div class="row">
+            <div class="col-sm-8 l-left-step-sec-01">
+              <div class="step-header"> <span class="location-2"><img src="images/calendar.png" alt=""></span> <span class="step-name">Step 5</span> </div>
+              <h2 class="heading-level-01">When Are You Looking To Move?</h2>
+              <p class="p-step">Choose the dutarion of stay</p>
+              <div class="row">
+                <div class="col-sm-3 check-property-step">
+                  <label class="remember-sec user-label landlord active">
+                  <div class="inner-user-bx">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span> <span class="user-icon"><img src="images/calendar-star.png" alt=""> <img src="images/calendar-star-active.png" alt=""></span>
+                    <div class="text-label">1-3 Months</div>
+                  </div>
+                  </label>
                 </div>
-                
-                <div class="row">
-                	<div class="col-sm-12">
-                    	<div class="step-btn-pagination">
-                        	<a href="tenant-step-4.html" class="blue-outline-btn">Previous Step</a>
-                        	<a href="tenant-step-6.html" class="primary-btn arrow-rt">Next step</a>
-                        </div>
-                    </div>
+                <div class="col-sm-3 check-property-step">
+                  <label class="remember-sec user-label landlord">
+                  <div class="inner-user-bx">
+                    <input type="checkbox">
+                    <span class="checkmark"></span> <span class="user-icon"><img src="images/calendar-star.png" alt=""> <img src="images/calendar-star-active.png" alt=""></span>
+                    <div class="text-label">3-6 Months</div>
+                  </div>
+                  </label>
                 </div>
+                <div class="col-sm-3 check-property-step">
+                  <label class="remember-sec user-label landlord">
+                  <div class="inner-user-bx">
+                    <input type="checkbox">
+                    <span class="checkmark"></span> <span class="user-icon"><img src="images/calendar-star.png" alt=""> <img src="images/calendar-star-active.png" alt=""></span>
+                    <div class="text-label">6+ Months</div>
+                  </div>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="p-step">What is the monthly rent?</p>
+                  <label>Select Date: </label>
+                  <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                    <input class="form-control" type="text" readonly />
+                    <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span> </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 mt-3">
+                  <label>Choose a room type</label>
+                  <div class="price-select-sec">
+                    <select class="arrow-select">
+                      <option>Shared</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 mt-3">
+                  <label>Accommodate </label>
+                  <div class="price-select-sec">
+                    <select class="arrow-select">
+                      <option>2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-sm-4">
+              <div class="step-rt-img-sec"> <img src="images/tenant-image-step-5.jpg" alt=""> </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="step-btn-pagination"> <a href="tenant-step-4.html" class="blue-outline-btn">Previous Step</a> <a href="tenant-step-6.html" class="primary-btn arrow-rt">Next step</a> </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -225,9 +234,8 @@
 <!-- canvas end here --> 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<script src="js/bootstrap.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-
+<script src="js/bootstrap.js"></script> 
+<script src="js/bootstrap-datepicker.js"></script> 
 <script src="js/owl.carousel.js"></script> 
 <script src="js/scripts.js"></script>
 </body>
