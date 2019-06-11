@@ -2202,6 +2202,10 @@ ul.features-list li {
     width: 100%;
     margin: 0 0 20px 0;
 }
+.chat-footer .primary-btn{ margin-bottom:20px; }
+.chat-body{ padding:15px; }
+.chat-time{ right:0px; }
+.incoming-chat-bx{ margin-left:65px; }
 	}
 	
 @media(max-width:575px){
