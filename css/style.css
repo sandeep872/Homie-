@@ -1906,6 +1906,7 @@ ul.pro-list.c-p-step-list li {
 }
 .gallery div{ position:relative; }
 .header .notification-list li{ margin:0px !important; }
+.landloard-profile-head .notification-list li a:hover, .landloard-profile-head .notification-list li.active a{ background:none; }
 @media(max-width:1330px){
 	.landloard-step-sec ul.step-list li.active:after{ left:46.5%; }
 	}
