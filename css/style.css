@@ -1905,6 +1905,10 @@ ul.pro-list.c-p-step-list li {
     margin-right: 15px; width:auto !important; min-width:150px;
 }
 .gallery div{ position:relative; }
+.header .notification-list li{ margin:0px !important; }
+@media(max-width:1330px){
+	.landloard-step-sec ul.step-list li.active:after{ left:46.5%; }
+	}
 @media(max-width:1199px){
 	.landloard-profile-head .navbar li a{ padding:10px; }
 	.landloard-profile-head .navbar{ right:0px; }
@@ -1951,6 +1955,7 @@ h5.heading-level-05.mb-3.mt-5 {
     margin-top: 10px !important; text-align:left;
 }
 .f-width-div{ flex:0 0 100%; max-width:100%; }
+.landloard-step-sec ul.step-list:before{left:33px;}
 	}
 @media(max-width:991px){
 	.heading-level-01{ font-size:30px; line-height:40px; margin-bottom:20px; }
@@ -1963,7 +1968,11 @@ h5.heading-level-05.mb-3.mt-5 {
 	.home-sec-3{ margin-bottom:60px; }
 	.home-sec-4{ background-image:none !important; padding:70px 0 60px 0; }
 	.home-sec-4 .col-md-4{max-width:100%;flex:0 0 100%;}
-	footer .social-media li{ margin-right:4px; }
+	footer .social-media li {
+    margin-right: 4px;
+    font-size: 24px;
+    margin: 0 10px;
+}
 	.home-sec-5{ padding:50px 0; }
 	.home-sec-7{ padding:60px 0 50px; }
 	footer .footer-top{ padding:20px 0; }
@@ -2025,6 +2034,7 @@ ul.features-list li {
     margin-top: 10px;
 }
 .upload-sec-gallery .step-6-gallery{ text-align:center; }
+.notification-footer{ padding:0px; }
 	}
 @media(max-width:767px){
 body{ padding-top:52px; }
@@ -2051,9 +2061,9 @@ a.arrow-scroll-btn img{ width:30px; }
 .home-sec-7 { padding: 40px 0 50px; text-align: center;}
 .home-sec-7 .col-md-4.text-right{ text-align:center !important; }
 .latest-insights-slider{ margin-top:25px; }
-.home-sec-2:before{ height:125px; }
+.home-sec-2:before{ height:110px; }
 .header #bs-navbar {width:100%;position:fixed;right:-100%;top:0;height:100%;display:flex;align-items:center;transition:all 0.5s ease-in-out; background:#2dc3d6; z-index:9; }
-.header{ padding:10px 0; }
+.header{ padding:7px 0 13px; }
 .header #bs-navbar.slide-menu{ right:0;  background:#2dc3d6; overflow:auto; }
 .header .navbar-header {display: block;position: absolute;right: 0; top:-15px; z-index:91;}
 .header .navbar li{ display:block; font-size:16px; margin:0; text-align:left; }
@@ -2153,7 +2163,6 @@ ul.features-list li {
 .form-control.p-number{ margin-top:0; }
 .edit-landloard-profile select#pincode{ top:16px; }
 .edit-landloard-profile .primary-btn{ width:100%; }
-.landloard-step-sec ul.step-list:before{ left:35px; }
 .primary-btn{ width:100%; }
 .home-inr-sec-3{ padding-bottom:0px; margin:0px; }
 .row.pro-l-head .col-md-3.pr-0 {
@@ -2184,6 +2193,15 @@ ul.features-list li {
 .desktop-hide{ display:block !important; }
 .landloard-rt-sec.tenant-edit-request .back-to-req-sec{ margin-bottom:20px; }
 .landloard-rt-sec.tenant-edit-request .col-md-4{ text-align:left !important; } 
+.chat-head-left, .chat-head-right{ width:49%; }
+.attached-menu{ left:0; }
+.attached-menu:before{ right:auto; left:18px; }
+#send-property .modal-body{ padding:15px; }
+.view-btn-footer .blue-outline-btn {
+    font-size: 16px;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
 	}
 	
 @media(max-width:575px){
