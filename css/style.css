@@ -169,11 +169,11 @@ p{
 
 .light-blue-btn{ background-color: rgba(2, 161, 181, 0.1); font-family: 'Sofia Pro'; font-weight: normal; color: #02a1b5; padding:3px 10px 7px; border-radius:5px; transition:all 0.5s ease-in-out; display:inline-block; text-align:center; }
 
-.light-blue-btn:hover{ box-shadow:0 50px 0 #40d1e4 inset; color:#fff; }
+.light-blue-btn:hover{ box-shadow:0 60px 0 #40d1e4 inset; color:#fff; }
 .light-red-btn{ background-color: rgba(226, 55, 55, 0.1); font-family: 'Sofia Pro'; font-weight: normal; color: #e23737
 ; padding:3px 10px 7px; border-radius:5px; transition:all 0.5s ease-in-out; display:inline-block; text-align:center;}
 
-.light-red-btn:hover{ box-shadow:0 50px 0 #e23737 inset; color:#fff; }
+.light-red-btn:hover{ box-shadow:0 60px 0 #e23737 inset; color:#fff; }
 
 .blue-outline-btn{
   font-size: 20px;
@@ -2161,7 +2161,7 @@ ul.features-list li {
     text-align: center;
 }
 .form-control.p-number{ margin-top:0; }
-.edit-landloard-profile select#pincode{ top:16px; }
+.edit-landloard-profile select#pincode{ top:0; }
 .edit-landloard-profile .primary-btn{ width:100%; }
 .primary-btn{ width:100%; }
 .home-inr-sec-3{ padding-bottom:0px; margin:0px; }
